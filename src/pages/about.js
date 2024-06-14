@@ -60,7 +60,7 @@ every project I work on. I look forward to the opportunity to bring my skills an
         <Image src={profilePic} alt="srijani" className='w-full h-auto rounded-2xl'  priority
             sizes="(max-width:768px) 100vw,(max-width:1200px) 50vw,33vw" />
         </div>
-        <div className='col-span-2 flex flex-col items-end justify-center xl:col-span-8 xl:flex-row xl:items-center md:order-3'>
+        <div className='col-span-2 flex flex-col items-end justify-start xl:col-span-8 xl:flex-row xl:items-center xl:justify-center md:order-3'>
             {/* <div className='flex flex-col items-end justify-center'>
                 <span className='inline-block text-7xl font-bold'>
                     <AnimatedNumbers value={50}/>+

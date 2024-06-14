@@ -37,9 +37,17 @@ const Experience = () => {
             <motion.div style={{scaleY:scrollYProgress}} className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] md:left-[30px] xs:left-[20px]'/>
             <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
                 <Details
+                position="Developer Associate" company="SAP Labs India"
+                companyLink="www.sap.com"
+                time="2024, April - Present" address="Bangalore"
+                work="Working in SAP FSM (Field Service Management) team responsible for first-time fix rates with mobile technology, AI-based recommendations to find the right technician for the job and optimize operations while reducing environmental impact, supporting sustainability efforts through efficient service delivery."
+                />
+            </ul>
+            <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
+                <Details
                 position="Full Stack Developer" company="SAP Labs India"
                 companyLink="www.sap.com"
-                time="2023, June-Present" address="Bangalore"
+                time="2023, June - 2024, March" address="Bangalore"
                 work="Worked in SAP C4C (cloud for customers) team responsible for developing new features for sales retail customers, including improving the accuracy and relevance of survey results and 
                 developing new tools for data analysis and visualization."
                 />
@@ -48,7 +56,7 @@ const Experience = () => {
                 <Details
                 position="Full Stack Developer" company="SAP Labs India"
                 companyLink="www.sap.com"
-                time="2022, September-2023, May" address="Bangalore"
+                time="2022, September - 2023, May" address="Bangalore"
                 work="Worked in SAP Business Network team responsible for building master database application for digital cloning products, a centered application for all operators, manufacturers and customers."
                 />
             </ul>
@@ -56,7 +64,7 @@ const Experience = () => {
                 <Details
                 position="Software Developer Engineer" company="Agitech Avids"
                 companyLink="www.agitechavids.com"
-                time="2021, August-2021, September" address="Kolkata"
+                time="2021, August - 2021, September" address="Kolkata"
                 work="Worked as Research and Development Intern where I worked on OTT streaming application and build a media streamer app for their customer."
                 />
             </ul>

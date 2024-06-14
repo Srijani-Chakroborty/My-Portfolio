@@ -12,6 +12,7 @@ import article4 from "../../public/images/articles/training.jpeg"
 import article5 from "../../public/images/articles/security.jpeg"
 import article6 from "../../public/images/articles/women.jpeg"
 import article7 from "../../public/images/articles/15yrs.jpeg"
+import TransitionEffect from '@/components/TransitionEffect'
 
 
 const FramerImage=motion(Image);
@@ -39,7 +40,7 @@ const MovingImg=({title,img,link})=>{
         onMouseLeave={handleMouseLeave}
         >
         <h2 className='capitalize text-xl font-semibold hover:underline'>{title}</h2>
-        <FramerImage src={img} alt={title} className='z-10 w-96 h-auto absolute rounded-lg'
+        <FramerImage src={img} alt={title} className='z-10 w-96 h-auto absolute rounded-lg md:!hidden'
         
         style={{x:x, y:y}}
         initial={{opacity:0}}
@@ -53,9 +54,9 @@ const MovingImg=({title,img,link})=>{
 const Article=({img,title,date,link})=>{
     return(
         <motion.li initial={{y:200}} whileInView={{y:0, transition:{duration:0.5,ease:"easeInOut"}}}
-        viewport={{once:true}} className='relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4 dark:border-light dark:bg-dark dark:text-light'>
+        viewport={{once:true}} className='relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4 dark:border-light dark:bg-dark dark:text-light sm:flex-col'>
             <MovingImg title={title} img={img} link={link}/>
-            <span className='text-primary font-semibold pl-4 dark:text-primaryDark'>{date}</span>
+            <span className='text-primary font-semibold pl-4 dark:text-primaryDark sm:self-start sm:pl-0 xs:text-sm'>{date}</span>
 
         </motion.li>
     )
@@ -74,7 +75,7 @@ const FeaturedArticle=({img,title,time,summary,link})=>{
             />
         </Link>
         <Link href={link} target="_blank">
-            <h2 className='capitalize text-2xl font-bold my-2 hover:underline'>
+            <h2 className='capitalize text-2xl font-bold my-2 hover:underline xs:text-lg'>
             {title}
             </h2>
         </Link>
@@ -92,10 +93,11 @@ const articles = () => {
     <title>SrijaniChakraborty | Articles Page</title>
     <meta name="description" content="any description"></meta>
    </Head>
+   <TransitionEffect/>
    <main className='w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light'>
     <Layout className='pt-16'>
-        <AnimatedText text="Words Can Change The World!" className='mb-16'/>
-        <ul className='grid grid-cols-2 gap-16'>
+        <AnimatedText text="Words Can Change The World!" className='mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl'/>
+        <ul className='grid grid-cols-2 gap-16 lg:gap-8 md:gap-y-16 md:grid-cols-1'>
             <FeaturedArticle
             title="Blockchain in Sustainable Development: A Paradigm Shift Towards a Greener Future"
             summary="In the rich tapestry of blockchain and sustainable development, we find not just technological innovation but a vibrant narrative of change — a narrative echoing with transparency, responsibility, and environmental consciousness. "

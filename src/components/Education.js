@@ -39,7 +39,7 @@ const Education = () => {
                 <Details
                 type="Master Of Technology In Software Engineering"
                 time="2022-2024" place="Birla Institute of Sciend and Technology, Pilani (BITS, Pilani)"
-                info="CGPA: 8.77"
+                info="CGPA: 9.00"
                 />
             </ul>
             <ul className='w-full flex flex-col items-start justify-between ml-4'>

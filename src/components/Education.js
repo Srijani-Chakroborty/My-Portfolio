@@ -45,7 +45,7 @@ const Education = () => {
             <ul className='w-full flex flex-col items-start justify-between ml-4'>
                 <Details
                 type="Bachelor Of Technology In Computer Science and Engineering"
-                time="2018-2022" place="Amity University Kolkata"
+                time="2018-2022" place="Amity University, Kolkata"
                 info="CGPA: 9.32"
                 />
             </ul>

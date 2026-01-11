@@ -11,6 +11,8 @@ import project2 from "../../public/images/projects/bank.png"
 import project4 from "../../public/images/projects/face.png"
 import project6 from "../../public/images/projects/url.png"
 import project3 from "../../public/images/projects/media.png"
+import project7 from "../../public/images/projects/ai-chat-app.png"
+import project8 from "../../public/images/projects/ai-expense-tracker.png"
 import { motion } from 'framer-motion'
 import TransitionEffect from '@/components/TransitionEffect'
 
@@ -83,6 +85,22 @@ const projects = () => {
     <Layout className='pt-16'>
         <AnimatedText className='mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl' text="Imagination Trumps Knowledge!"/>
         <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
+            <div className='col-span-6 sm:col-span-12'>
+               <Project
+               title="AI Chat Application"
+               img={project7}
+               link="https://github.com/Srijani-Chakroborty/Dissertation-AiChat-App"
+               github="https://github.com/Srijani-Chakroborty/Dissertation-AiChat-App"
+               type="Featured Project"/>
+            </div>
+            <div className='col-span-6 sm:col-span-12'>
+            <Project
+               title="AI Expense Tracker"
+               img={project8}
+               link="https://github.com/Srijani-Chakroborty/ai-expense-tracker"
+               github="https://github.com/Srijani-Chakroborty/ai-expense-tracker"
+               type="Featured Project"/>
+            </div>
             <div className='col-span-12'>
                 <FeaturedProjects
                 title="AmiSocial - Social Media Application"

@@ -32,7 +32,7 @@ const Skills = () => {
         <Skill name="Javascript" x="20vw" y="6vw"/>
         <Skill name="ReactJS" x="0vw" y="12vw"/>
         <Skill name="NextJS" x="-20vw" y="-15vw"/>
-        <Skill name="UI5" x="15vw" y="-12vw"/>
+        <Skill name="Springboot" x="15vw" y="-12vw"/>
         <Skill name="MongoDB" x="32vw" y="-5vw"/>
         <Skill name="Typescript" x="0vw" y="-21vw"/>
         <Skill name="Tailwind CSS" x="-25vw" y="18vw"/>

@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
-import Logo from './Logo'
 import { useRouter } from 'next/router'
-import  { TwitterIcon, DribbbleIcon, GithubIcon, LinkedInIcon, PinterestIcon, SunIcon, MoonIcon } from './Icons'
+import  { GithubIcon, LinkedInIcon, SunIcon, MoonIcon } from './Icons'
 import {motion} from "framer-motion"
 import { useThemeSwitcher } from './hooks/useThemeSwitcher'
 
@@ -91,7 +90,6 @@ const NavBar = () => {
     : null
   }
     <div className='absolute left-[50%] top-2 translate-x-[-50%]'>
-    <Logo/>
     </div>
     </header>
   )

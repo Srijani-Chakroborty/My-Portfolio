@@ -25,27 +25,27 @@ export default function Home() {
         <Layout className='pt-0 md:pt-16 sm:pt-8'>
           <div className='flex items-center justify-between w-full lg:flex-col'>
             <div className='w-1/2 md:w-full'>
-              <Image src={profilePic} alt="srijani" className='w-full h-auto lg:hidden md:inline-block md:w-full' priority
-                sizes="(max-width:768px) 90vw,(max-width:1200px) 50vw, 50vw"
+              <Image src={profilePic} alt="srijani" className='w-full h-auto  md:inline-block md:w-full' priority
+                sizes="(min-width:768px) 90vw, (min-width:1200px) 50vw, 50vw"
               />
             </div>
-            <div className='w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center'>
+            <div className='w-1/2 flex flex-col lg:w-full lg:text-center'>
               <AnimatedText text="Turning Vision Into Reality With Code." className='mt-4 !text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text=6xl md:!text-5xl sm:!text-3xl' />
-              <p className='my-4 text-base font-medium sm:text-sm text-lg'>
+              <p className='my-4 font-medium sm:text-sm text-lg'>
                 As a <b className='text-primary font-black tracking-wide dark:text-amber-400'>Full-Stack Developer</b>, I am dedicated to turning ideas into innovative web applications.
                 <br />Explore my latest projects and articles, showcasing my expertise in various tech-stack.
               </p>
-              <div className='flex items-center gap-4 self-start mt-2 lg:self-center'>
-                <Link href="/dummy.pdf" target={"_blank"} className='flex items-center bg-dark text-light py-2.5 px-20 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:p-2 md:px-12 md:text-base transition-all duration-300 ease-in-out'
+              <div className='flex items-center gap-4 self-start w-full lg:justify-center'>
+                <Link href="/dummy.pdf" target={"_blank"} className='flex items-center bg-dark text-light py-2 px-20 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:p-2 md:px-12 md:text-base transition-all duration-300 ease-in-out'
                   download={true}>Resume <LinkArrow className='w-6 ml-1' /></Link>
               </div>
             </div>
           </div>
-          <div className='hidden lg:flex lg:flex-row justify-center items-center gap-8 mt-6'>
+          <div className='hidden md:flex md:flex-row justify-center items-center gap-8 mt-6'>
             <a
               href="mailto:chakrobortysrijani2001@gmail.com"
               target="_blank noopener noreferrer"
-              className='w-10 h-10 flex items-center justify-center cursor-pointer'
+              className='w-11 h-12 flex items-center justify-center cursor-pointer'
             >
               <Mail strokeWidth={2} className='w-full h-full' />
             </a>

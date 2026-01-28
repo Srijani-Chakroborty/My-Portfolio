@@ -29,8 +29,8 @@ const Education = () => {
         offset:["start end","center start"]
     })
   return (
-    <div className='my-64'>
-        <h2 className='font-bold text-8xl mb-32 w-full text-cente md:text-6xl xs:text-4xl md:mb-16'>
+    <div className='my-40'>
+        <h2 className='font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16'>
             Education
         </h2>
         <div ref={ref} className='w-[75%] mx-auto relative lg:w-[90%] md:w-full'>

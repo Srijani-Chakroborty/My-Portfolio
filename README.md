@@ -1,34 +1,79 @@
-# Portfolio Website with Nextjs, Tailwind CSS and Framer-motion🌟
+# Portfolio Website with Next.js, Tailwind CSS and Framer Motion
 
+A modern, responsive portfolio website built with Next.js 16, Tailwind CSS, and Framer Motion for smooth animations.
 
-### External Libraries used in this project:
+## Tech Stack
 
-- [framer-motion](https://www.framer.com/motion/) <br />
-- [Tailwind css](https://tailwindcss.com/) <br />
+- **Framework**: [Next.js 16](https://nextjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Package Manager**: [Bun](https://bun.sh/)
 
-### Developer Tools:
+## Prerequisites
 
-- [oxlint](https://oxc.rs/) - Fast JavaScript/TypeScript linter <br />
-- [oxfmt](https://oxc.rs/) - Fast code formatter <br />
-- [Turbopack](https://nextjs.org/docs/architecture/turbopack) - Rust-based incremental bundler (default in Next.js 16) <br />
+Before you begin, ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (v24.x or higher)
+- [Bun](https://bun.sh/) (latest version)
 
-## 📝 Available Scripts
+## Getting Started
 
+### Installation
+
+1. Clone the repository:
 ```bash
-# Development
-bun run dev          # Start development server
-
-# Build
-bun run build        # Create production build
-bun run start        # Start production server
-
-# Linting
-bun run lint         # Run Next.js ESLint
-bun run lint:ox      # Run oxlint (fast Rust-based linter)
-
-# Formatting
-bun run format       # Format code with oxfmt
-bun run format:check # Check if code is formatted
+git clone <repository-url>
+cd srijani-portfolio
 ```
 
+2. Install dependencies:
+```bash
+bun install
+```
+
+### Development
+
+Run the development server:
+```bash
+bun run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
+
+### Build
+
+Create an optimized production build:
+```bash
+bun run build
+```
+
+### Production
+
+Start the production server:
+```bash
+bun run start
+```
+
+### Linting
+
+Run ESLint to check for code quality issues:
+```bash
+bun run lint
+```
+## Customization
+
+### Styling
+
+The project uses Tailwind CSS for styling. You can customize the theme in [tailwind.config.js](tailwind.config.js).
+
+### Content
+
+Update content in the respective page files under [src/pages/](src/pages/).
+
+## License
+
+This project is open source and available under the MIT License.
+
+## Author
+
+**Srijani Chakraborty**
 

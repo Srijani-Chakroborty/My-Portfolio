@@ -6,21 +6,21 @@
     "node": "24.x"
   },
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "lint:ox": "oxlint",
-    "lint:ox:fix": "oxlint --fix",
-    "format": "oxlint --fix src",
-    "format:check": "oxlint src"
+    "lint:ox:fix": "oxlint --fix"
   },
   "dependencies": {
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
     "framer-motion": "^10.6.0",
-    "next": "13.5.1",
+    "lucid": "^2.21.0",
+    "lucide-react": "^0.563.0",
+    "next": "16.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },

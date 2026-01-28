@@ -10,6 +10,7 @@
 
 - [oxlint](https://oxc.rs/) - Fast JavaScript/TypeScript linter <br />
 - [oxfmt](https://oxc.rs/) - Fast code formatter <br />
+- [Turbopack](https://nextjs.org/docs/architecture/turbopack) - Rust-based incremental bundler (default in Next.js 16) <br />
 
 ## 📝 Available Scripts
 

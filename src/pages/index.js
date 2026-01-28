@@ -38,6 +38,7 @@ export default function Home() {
               <div className='flex items-center gap-4 self-start w-full lg:justify-center'>
                 <Link href="/dummy.pdf" target={"_blank"} className='flex items-center bg-dark text-light py-2 px-20 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:p-2 md:px-12 md:text-base transition-all duration-300 ease-in-out'
                   download={true}>Resume <LinkArrow className='w-6 ml-1' /></Link>
+                <Link href="mailto:chakrobortysrijani2001@gmail.com" target={"_blank"} className='flex items-center bg-dark text-light p-2 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:p-2 md:px-4 md:text-base'>Email</Link>
               </div>
             </div>
           </div>

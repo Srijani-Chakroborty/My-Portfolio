@@ -21,19 +21,19 @@ const FramerImage = motion(Image);
 const FeaturedProjects = ({ type, title, summary, img, link, github }) => {
   return (
     <article
-      className="w-full flex items-center justify-between relative rounded-br-2xl rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4 h-full"
+      className="w-full flex items-center justify-between relative rounded-br-2xl rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-2"
     >
       <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-3xl" />
       {link ? (
         <Link
           href={link}
           target="_blank"
-          className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full"
+          className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full aspect-video flex items-center justify-center"
         >
           <FramerImage
             src={img}
             alt={title}
-            className="w-full h-auto"
+            className="w-full h-full object-contain"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
             priority
@@ -41,11 +41,11 @@ const FeaturedProjects = ({ type, title, summary, img, link, github }) => {
           />
         </Link>
       ) : (
-        <div className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full">
+        <div className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full aspect-video flex items-center justify-center">
           <FramerImage
             src={img}
             alt={title}
-            className="w-full h-auto"
+            className="w-full h-full object-contain"
             priority
             sizes="(max-width:768px) 100vw,(max-width:1200px) 50vw,50vw"
           />
@@ -57,27 +57,27 @@ const FeaturedProjects = ({ type, title, summary, img, link, github }) => {
         </span>
         {link ? (
           <Link href={link} target="_blank" className="hover:underline underline-offset-2">
-            <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm">
+            <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm xs:text-xs">
               {title}
             </h2>
           </Link>
         ) : (
-          <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm">
+          <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm xs:text-xs">
             {title}
           </h2>
         )}
-        <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">{summary}</p>
+        <p className="my-2 font-medium text-dark dark:text-light sm:text-sm xs:text-xs">{summary}</p>
         <div className="mt-2 w-full flex items-center">
           {link && (
             <Link
               href={link}
               target="_blank"
-              className="rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark sm:px-4 sm:text-base"
+              className="rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark sm:px-4 sm:text-base xs:px-3 xs:text-sm xs:p-1.5"
             >
               Visit Project
             </Link>
           )}
-          <Link className="w-10 ml-auto" href={github} target="_blank">
+          <Link className="w-10 ml-auto xs:w-8" href={github} target="_blank">
             <GithubIcon />
           </Link>
         </div>
@@ -88,25 +88,25 @@ const FeaturedProjects = ({ type, title, summary, img, link, github }) => {
 
 const Project = ({ title, type, img, link, github }) => {
   return (
-    <article className="w-full h-full flex flex-col items-center justify-start rounded-2xl border border-solid border-dark bg-light p-6 relative dark:bg-dark dark:border-light xs:p-4">
+    <article className="w-full h-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative dark:bg-dark dark:border-light xs:p-2">
       <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-4xl bg-dark rounded-br-3xl dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-3xl" />
       {link ? (
         <Link
           href={link}
           target="_blank"
-          className="w-full cursor-pointer overflow-hidden rounded-lg h-48 flex items-center justify-center bg-gray-50 dark:bg-gray-900"
+          className="w-full cursor-pointer overflow-hidden rounded-lg aspect-video flex items-center justify-center bg-gray-50 dark:bg-gray-900"
         >
           <FramerImage
             src={img}
             alt={title}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
           />
         </Link>
       ) : (
-        <div className="w-full cursor-pointer overflow-hidden rounded-lg h-48 flex items-center justify-center bg-gray-50 dark:bg-gray-900">
-          <FramerImage src={img} alt={title} className="w-full h-full object-cover" />
+        <div className="w-full cursor-pointer overflow-hidden rounded-lg aspect-video flex items-center justify-center bg-gray-50 dark:bg-gray-900">
+          <FramerImage src={img} alt={title} className="w-full h-full object-contain" />
         </div>
       )}
       <div className="w-full flex flex-col items-start justify-between mt-4 grow">
@@ -115,22 +115,22 @@ const Project = ({ title, type, img, link, github }) => {
         </span>
         {link ? (
           <Link href={link} target="_blank" className="hover:underline underline-offset-2">
-            <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">{title}</h2>
+            <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl xs:text-lg">{title}</h2>
           </Link>
         ) : (
-          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">{title}</h2>
+          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl xs:text-lg">{title}</h2>
         )}
         <div className="w-full mt-auto pt-2 flex items-center">
           {link && (
             <Link
               href={link}
               target="_blank"
-              className="mr-4 text-lg font-semibold underline md:text-base"
+              className="mr-4 text-lg font-semibold underline md:text-base xs:text-sm"
             >
               Visit
             </Link>
           )}
-          <Link className="w-8 md:w-6 ml-auto" href={github} target="_blank">
+          <Link className="w-8 md:w-6 xs:w-5 ml-auto" href={github} target="_blank">
             <GithubIcon />
           </Link>
         </div>
@@ -153,15 +153,15 @@ const projects = () => {
             className="mb-16 lg:text-7xl! sm:text-6xl! xs:text-4xl!"
             text="Imagination Trumps Knowledge!"
           />
-          <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
-            <div className="col-span-6 sm:col-span-12 flex">
+          <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0 xs:gap-y-16">
+            <div className="col-span-6 sm:col-span-12 sm:px-4 xs:px-4 flex">
               <Project
                 title="AI Chat Application"
                 img={project7}
                 github="https://github.com/Srijani-Chakroborty/Dissertation-AiChat-App"
               />
             </div>
-            <div className="col-span-6 sm:col-span-12">
+            <div className="col-span-6 sm:col-span-12 sm:px-4 xs:px-4 flex">
               <Project
                 title="AI Expense Tracker"
                 img={project8}
@@ -169,7 +169,7 @@ const projects = () => {
                 github="https://github.com/Srijani-Chakroborty/ai-expense-tracker"
               />
             </div>
-            <div className="col-span-12">
+            <div className="col-span-12 sm:px-4 xs:px-4">
               <FeaturedProjects
                 title="AmiSocial - Social Media Application"
                 summary="AmiSocial (Ami = 'Me' / abv. of Amity) is a social media app which I made for my University (Amity University Kolkata). This project is based on MERN tech stack where I have used React for UI and Node js, MongoDb for Backend. This is a responsive web application where anyone of my university who has access to this app link can login and explore all the features of it."
@@ -177,14 +177,14 @@ const projects = () => {
                 github="https://github.com/Srijani-Chakroborty/AmiSocial"
               />
             </div>
-            <div className="col-span-6 sm:col-span-12 flex">
+            <div className="col-span-6 sm:col-span-12 sm:px-4 xs:px-4 flex">
               <Project
                 title="Online Banking Website"
                 img={project2}
                 github="https://github.com/Srijani-Chakroborty/Online-Banking-website"
               />
             </div>
-            <div className="col-span-6 sm:col-span-12 flex">
+            <div className="col-span-6 sm:col-span-12 sm:px-4 xs:px-4 flex">
               <Project
                 title="Media Streamer"
                 img={project3}
@@ -192,7 +192,7 @@ const projects = () => {
                 github="https://github.com/Srijani-Chakroborty/MediaStreamer"
               />
             </div>
-            <div className="col-span-12 sm:col-span-12">
+            <div className="col-span-12 sm:px-4 xs:px-4">
               <FeaturedProjects
                 title="Face Recognition System"
                 summary="A simple system application for face extraction and recognition using machine learning concepts and python libraries. This system application is very easy to use and also easy to understand whether a face is recognized or not. We have used green and red frames to let users understand that green box is for 'face is succesfully recognized' and red box is for 'face is not recognized', and also if the face is covered or not visible then it will show that 'face is not detected'."
@@ -200,7 +200,7 @@ const projects = () => {
                 github="https://github.com/Srijani-Chakroborty/Face-Recognition-System"
               />
             </div>
-            <div className="col-span-6 sm:col-span-12 flex">
+            <div className="col-span-6 sm:col-span-12 sm:px-4 xs:px-4 flex">
               <Project
                 title="Sort Visualizer"
                 img={project5}
@@ -208,7 +208,7 @@ const projects = () => {
                 github="https://github.com/Srijani-Chakroborty/Sort_visualizer"
               />
             </div>
-            <div className="col-span-6 sm:col-span-12 flex">
+            <div className="col-span-6 sm:col-span-12 sm:px-4 xs:px-4 flex">
               <Project
                 title="URL Shortener"
                 img={project6}

@@ -15,10 +15,10 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${monteserrat.variable} min-h-full font-mont bg-light dark:bg-dark w-full`}>
+      <main className={`${monteserrat.variable} min-h-full font-mont bg-light dark:bg-dark w-full overflow-x-hidden`}>
         <NavBar />
         <hr className="border-dark/50 dark:border-light/50" />
         <AnimatePresence mode="wait">

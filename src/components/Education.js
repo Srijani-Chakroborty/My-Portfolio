@@ -33,45 +33,29 @@ const Education = () => {
     offset: ["start end", "end center"],
   });
   return (
-    <div className="my-40">
+    <div className="my-32">
       <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
         Education
       </h2>
       <div ref={ref} className="w-[75%] mx-auto relative lg:w-[90%] md:w-full">
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className="absolute left-9 top-0 w-1 h-full bg-dark origin-top dark:bg-light md:w-0.5 md:left-7.5 xs:left-5"
+          className="absolute left-9 top-0 w-1 h-full bg-linear-to-b from-primary to-primaryDark origin-top md:w-0.5 md:left-7.5 xs:left-5"
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4">
           <Details
-            type="Master Of Technology In Software Engineering"
-            time="2022-2024"
-            place="Birla Institute of Sciend and Technology, Pilani (BITS, Pilani)"
+            type="Master of Technology in Software Engineering"
+            time="August 2022 - July 2024"
+            place="Birla Institute of Technology and Science, Pilani, Rajasthan"
             info="CGPA: 9.00"
           />
         </ul>
         <ul className="w-full flex flex-col items-start justify-between ml-4">
           <Details
-            type="Bachelor Of Technology In Computer Science and Engineering"
-            time="2018-2022"
-            place="Amity University, Kolkata"
+            type="Bachelor of Technology in Computer Science and Engineering"
+            time="August 2018 - July 2022"
+            place="Amity University"
             info="CGPA: 9.32"
-          />
-        </ul>
-        <ul className="w-full flex flex-col items-start justify-between ml-4">
-          <Details
-            type="Higher Secondary Education of West Bengal Board(PCMB)"
-            time="2018"
-            place="Surendranath Girls' High School"
-            info="Percentage: 84"
-          />
-        </ul>
-        <ul className="w-full flex flex-col items-start justify-between ml-4">
-          <Details
-            type="Secondary Education of West Bengal Board"
-            time="2016"
-            place="Surendranath Girls' High School"
-            info="Percentage: 89"
           />
         </ul>
       </div>

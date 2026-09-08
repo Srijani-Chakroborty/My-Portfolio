@@ -56,7 +56,7 @@ const NavBar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <header className="w-full max-w-full px-10 py-4 font-medium flex items-center justify-between dark:text-light relative z-10 lg:px-8 md:px-8 sm:px-4">
+    <header className="w-full max-w-full px-10 py-5 font-medium flex items-center justify-between dark:text-light relative z-10 lg:px-8 md:px-8 sm:px-4 border-b border-dark/10 dark:border-light/10">
       <button className="flex-col jstify-center items-center hidden md:flex" onClick={handleClick}>
         <span
           className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"}`}
@@ -69,17 +69,20 @@ const NavBar = () => {
         ></span>
       </button>
       <div className="w-full flex flex-row justify-between items-center md:hidden">
-        <nav>
-          <CustomLink href="/" title="Home" className="mr-4" />
-          <CustomLink href="/about" title="About" className="mx-4" />
-          <CustomLink href="/projects" title="Projects" className="mx-4" />
-          <CustomLink href="/articles" title="Articles" className="ml-4" />
+        <nav className="flex items-center">
+          <Link href="/" className="mr-10 text-lg font-black tracking-[-0.08em] dark:text-light">
+            SC<span className="text-primary dark:text-primaryDark">.</span>
+          </Link>
+          <CustomLink href="/" title="Home" className="mr-5 text-sm" />
+          <CustomLink href="/about" title="About" className="mx-5 text-sm" />
+          <CustomLink href="/projects" title="Projects" className="mx-5 text-sm" />
+          <CustomLink href="/articles" title="Articles" className="ml-5 text-sm" />
         </nav>
 
         <nav className="flex items-center justify-center flex-wrap">
           {/* <motion.a className='w-6 mr-3' href="https://twitter.com" target={"_blank"} whileHover={{y:-2}} whileTap={{scale:0.9}}><TwitterIcon/></motion.a> */}
           <motion.a
-            className="w-10 mx-3"
+            className="w-8 h-8 mx-2 p-1.5 hover:text-primary dark:hover:text-primaryDark transition-colors"
             href="https://github.com/Srijani-Chakroborty"
             target={"_blank"}
             whileHover={{ y: -2 }}
@@ -88,7 +91,7 @@ const NavBar = () => {
             <GithubIcon />
           </motion.a>
           <motion.a
-            className="w-10 mx-3"
+            className="w-8 h-8 mx-2 p-1.5 hover:text-primary dark:hover:text-primaryDark transition-colors"
             href="https://www.linkedin.com/in/srijani-chakraborty-a0b42b1a0/"
             target={"_blank"}
             whileHover={{ y: -2 }}
@@ -135,7 +138,7 @@ const NavBar = () => {
       <div className="top-2 left-2">
         <button
           onClick={() => setMode(mode === "light" ? "dark" : "light")}
-          className={`w-10 ml-3 flex items-center justify-center rounded-full p-1 ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}
+          className={`w-9 h-9 ml-3 flex items-center justify-center rounded-full p-1 transition-transform hover:scale-105 ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}
         >
           {mode === "dark" ? (
             <SunIcon className="fill-dark w-10" />

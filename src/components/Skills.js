@@ -29,20 +29,20 @@ const Skills = () => {
           className="flex item-center justify-center rounded-full font-semibold bg-dark text-light p-8 shadow-dark cursor-pointer dark:text-dark dark:bg-light lg:p-6 md:p-4 xs:text-xs xs:p-2"
           whileHover={{ scale: 1.05 }}
         >
-          Dev
+          Full Stack
         </motion.div>
-        <Skill name="HTML" x="-20vw" y="2vw" />
-        <Skill name="CSS" x="-10vw" y="-11vw" />
-        <Skill name="Javascript" x="20vw" y="6vw" />
-        <Skill name="ReactJS" x="0vw" y="12vw" />
-        <Skill name="NextJS" x="-20vw" y="-15vw" />
-        <Skill name="Springboot" x="15vw" y="-12vw" />
-        <Skill name="MongoDB" x="32vw" y="-5vw" />
-        <Skill name="Typescript" x="0vw" y="-21vw" />
-        <Skill name="Tailwind CSS" x="-25vw" y="18vw" />
-        <Skill name="Java" x="18vw" y="18vw" />
-        <Skill name="Angular" x="-4vw" y="21vw" />
-        <Skill name="Node.js" x="-32vw" y="2vw" />
+        <Skill name="Angular" x="-20vw" y="2vw" />
+        <Skill name="React" x="-10vw" y="-11vw" />
+        <Skill name="JavaScript" x="20vw" y="6vw" />
+        <Skill name="TypeScript" x="0vw" y="12vw" />
+        <Skill name="Spring Boot" x="-20vw" y="-15vw" />
+        <Skill name="Java" x="15vw" y="-12vw" />
+        <Skill name="Docker" x="32vw" y="-5vw" />
+        <Skill name="Kubernetes" x="0vw" y="-21vw" />
+        <Skill name="PostgreSQL" x="-25vw" y="18vw" />
+        <Skill name="Apache Kafka" x="18vw" y="18vw" />
+        <Skill name="GenAI" x="-4vw" y="21vw" />
+        <Skill name="AWS" x="-32vw" y="2vw" />
       </div>
     </>
   );

@@ -152,49 +152,6 @@ const about = () => {
       sizes="(max-width:768px) 100vw,(max-width:1200px) 50vw,40vw"
     />
   </div>
-
-  {/* Small label */}
-  <div
-    className="
-      absolute
-      top-10
-      left-0
-      z-20
-      rounded-full
-      border
-      border-primary/20
-      bg-light/90
-      px-4
-      py-2
-      text-[10px]
-      font-bold
-      uppercase
-      tracking-[0.2em]
-      text-primary
-      backdrop-blur-sm
-      dark:bg-dark/90
-      dark:text-primaryDark
-      sm:top-5
-    "
-  >
-    Engineer · Builder
-  </div>
-
-  {/* Accent dot */}
-  <span
-    className="
-      absolute
-      top-20
-      right-2
-      z-20
-      h-3
-      w-3
-      rounded-full
-      bg-primary
-      dark:bg-primaryDark
-      sm:right-0
-    "
-  />
 </div>
             <div className="col-span-3 flex flex-col gap-5 items-end justify-center lg:col-span-1 lg:flex-row lg:items-center lg:justify-center lg:order-3">
               <div className="w-full flex flex-col items-end justify-center lg:items-center">

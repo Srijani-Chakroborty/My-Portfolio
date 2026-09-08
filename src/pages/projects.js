@@ -404,7 +404,7 @@ const projects = () => {
               <Project
                 title="AI Expense Tracker"
                 img={project8}
-                link="https://ai-expense-tracker-zuyx.vercel.app/login"
+                link="https://ai-expense-tracker-zuyx.vercel.app/"
                 github="https://github.com/Srijani-Chakroborty/ai-expense-tracker"
                 type="AI Application"
                 summary="Responsive full-stack expense and income tracker with analytics and Gemini-powered financial insights, built with React, Express, MongoDB, Node.js, and Cloudinary."

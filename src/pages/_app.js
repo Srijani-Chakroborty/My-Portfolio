@@ -18,9 +18,9 @@ export default function App({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${monteserrat.variable} min-h-full font-mont bg-light dark:bg-dark w-full overflow-x-hidden`}>
+      <main className={`${monteserrat.variable} site-shell min-h-full font-mont w-full overflow-x-hidden`}>
         <NavBar />
-        <hr className="border-dark/50 dark:border-light/50" />
+        <hr className="border-dark/10 dark:border-light/10" />
         <AnimatePresence mode="wait">
           <Component key={router.asPath} {...pageProps} />
         </AnimatePresence>

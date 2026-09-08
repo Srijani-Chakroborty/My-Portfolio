@@ -6,3 +6,27 @@ html,body {
     margin: 0;
     overflow-x: hidden;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f5f5f5;
+    color: #1b1b1b;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+::selection {
+    background: #B63E96;
+    color: #fff;
+}
+
+.site-shell {
+    background: #f5f5f5;
+}
+
+.dark .site-shell {
+    background: #1b1b1b;
+}
